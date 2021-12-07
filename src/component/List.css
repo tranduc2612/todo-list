@@ -1,0 +1,11 @@
+.list__container{
+    margin: 20px 70px;
+    justify-content: center;
+    display: flex;
+}
+
+.todo__list{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}

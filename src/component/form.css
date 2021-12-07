@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.form__input{
+    width: 30vw;
+    height: 100%;
+    font-size: 2rem;
+    
+    border-radius: 2px;
+    border-color: transparent;
+    outline: none;
+}
+
+.form__button{
+    transform: translateX(-40px);
+    width: 40px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: red;
+}
+
+.filter__todo{
+    height: 100%;
+    align-items: center;
+}
