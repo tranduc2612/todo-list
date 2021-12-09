@@ -1,7 +1,7 @@
 import React,{useRef} from 'react'
 import {PlusCircleOutlined  } from '@ant-design/icons';
 import "./form.css"
-function Form({setInputText,inputText, todos,setTodos}) {
+function Form({setInputText,inputText, todos,setTodos,setStatus}) {
     const handleInput=(e)=>{
         setInputText(e.target.value)
     }
@@ -21,6 +21,10 @@ function Form({setInputText,inputText, todos,setTodos}) {
         eleInput.current.focus()
     }
 
+    const handleStatus =(e)=>{
+        setStatus(e.target.value)
+    }
+
     return (
         <div>
             <form className="form">
@@ -29,10 +33,10 @@ function Form({setInputText,inputText, todos,setTodos}) {
                     <PlusCircleOutlined style={{ fontSize: '16px', color: 'black' }}/>
                 </button>
                 <div className="form__selector">
-                    <select name="todos" className="filter__todo">
+                    <select onChange={handleStatus} name="todos" className="filter__todo">
                         <option value="all">All</option>
-                        <option value="all">Completed</option>
-                        <option value="all">Uncompleted</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
                     </select>
                 </div>
             </form>

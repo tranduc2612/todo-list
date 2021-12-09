@@ -21,9 +21,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    background-image: white;
+    transition: all .3s linear;
 }
+
 .form__button:hover{
-    background-color: red;
+    background-image: linear-gradient(#FFC4E1,#94DAFF) ;
 }
 
 .filter__todo{

@@ -2,7 +2,7 @@ import React from 'react'
 import {CheckOutlined  } from '@ant-design/icons';
 import {DeleteOutlined} from '@ant-design/icons';
 import './Todo.css'
-import Item from 'antd/lib/list/Item';
+
 function Todo({text,todos,job,setTodos}) {
 
     const handleDelete=()=>{
@@ -19,7 +19,7 @@ function Todo({text,todos,job,setTodos}) {
             }
             return e
         }))
-    }
+    } 
 
     return (
         <div className="todo">
